@@ -28,6 +28,7 @@
 4. **dockerfile run command**
 
    docker run -t my-nginx-site .
+
    docker run -d -p 8080:80 --name my-nginx my-nginx-ste
 ## 📝 Contributing
 
