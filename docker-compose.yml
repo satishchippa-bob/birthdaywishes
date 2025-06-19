@@ -1,0 +1,14 @@
+
+version: '3.8'
+
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "8081:80"
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
+      - ./style:/usr/share/nginx/html/style
+      - ./script:/usr/share/nginx/html/script
+      - ./img:/usr/share/nginx/html/img
+
